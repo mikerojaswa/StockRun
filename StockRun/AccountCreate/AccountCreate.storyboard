@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZmS-6p-kCG">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-DemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="UIS-SO-U0T">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="ZmS-6p-kCG" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WFZ-Jj-e1h">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="PFb-za-YEV" kind="relationship" relationship="rootViewController" id="r90-bB-6of"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t8W-dT-o5Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-431" y="-121"/>
+        </scene>
+        <!--Initial Screen-->
+        <scene sceneID="S4Z-2Y-Obq">
+            <objects>
+                <viewController id="PFb-za-YEV" customClass="InitialScreen" customModule="StockRun" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F2c-ce-rPb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bvn-WC-YOB" customClass="GradientView" customModule="StockRun" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StockRun" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="818-hW-95c">
+                                        <rect key="frame" x="101" y="28" width="172" height="48"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YWg-bY-KRz" customClass="SRButton" customModule="StockRun" customModuleProvider="target">
+                                        <rect key="frame" x="40" y="581" width="295" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="hi3-AX-dw7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="24"/>
+                                        <state key="normal" title="Go!"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="fillButton" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRad">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="XWD-C2-IX7" kind="show" id="t5T-br-AwC"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sgq-6Z-OMq">
+                                        <rect key="frame" x="67" y="145" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="818-hW-95c" firstAttribute="top" secondItem="bvn-WC-YOB" secondAttribute="top" constant="28" id="HCs-pV-f0K"/>
+                                    <constraint firstAttribute="trailing" secondItem="818-hW-95c" secondAttribute="trailing" constant="102" id="Mze-KX-eYO"/>
+                                    <constraint firstAttribute="trailing" secondItem="YWg-bY-KRz" secondAttribute="trailing" constant="40" id="Ryn-Lj-9Ac"/>
+                                    <constraint firstItem="YWg-bY-KRz" firstAttribute="centerX" secondItem="bvn-WC-YOB" secondAttribute="centerX" id="X0D-ZI-vaB"/>
+                                    <constraint firstItem="YWg-bY-KRz" firstAttribute="leading" secondItem="bvn-WC-YOB" secondAttribute="leading" constant="40" id="oKM-dK-Asl"/>
+                                    <constraint firstItem="818-hW-95c" firstAttribute="centerX" secondItem="bvn-WC-YOB" secondAttribute="centerX" id="q9o-6H-M6y"/>
+                                    <constraint firstAttribute="bottom" secondItem="YWg-bY-KRz" secondAttribute="bottom" constant="36" id="qm8-8S-6i8"/>
+                                    <constraint firstItem="818-hW-95c" firstAttribute="leading" secondItem="bvn-WC-YOB" secondAttribute="leading" constant="101" id="scx-ZM-GGo"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                        <color key="value" red="0.26666666666666666" green="0.81176470588235294" blue="0.79607843137254897" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                        <color key="value" red="0.30588235294117649" green="0.6470588235294118" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.95686274510000002" alpha="0.60000002379999995" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="0rQ-r8-7sV" firstAttribute="trailing" secondItem="bvn-WC-YOB" secondAttribute="trailing" id="mtO-J8-s9q"/>
+                            <constraint firstItem="bvn-WC-YOB" firstAttribute="leading" secondItem="0rQ-r8-7sV" secondAttribute="leading" id="nae-Yw-MU7"/>
+                            <constraint firstItem="0rQ-r8-7sV" firstAttribute="top" secondItem="bvn-WC-YOB" secondAttribute="top" constant="20" id="npQ-qn-CLa"/>
+                            <constraint firstItem="0rQ-r8-7sV" firstAttribute="bottom" secondItem="bvn-WC-YOB" secondAttribute="bottom" id="wW9-DD-Ove"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0rQ-r8-7sV"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Okc-PO-qlh"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wod-Qe-GHI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="360.80000000000001" y="-121.88905547226388"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="LVu-D0-wlL">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Main" storyboardName="Main" id="XWD-C2-IX7" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jn2-10-ae3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1028" y="-124"/>
+        </scene>
+    </scenes>
+</document>
