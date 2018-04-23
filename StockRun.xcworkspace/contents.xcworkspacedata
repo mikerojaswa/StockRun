@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/michael/Code/StockRun/StockRun/Profile+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/michael/Code/StockRun/StockRun/Profile+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
       location = "group:/Users/michael/Code/StockRun/StockRun/Stocks+CoreDataClass.swift">
    </FileRef>
    <FileRef

@@ -22,6 +22,10 @@
 		4C672A15208C680B00C68A05 /* SRCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C672A13208C680B00C68A05 /* SRCell.swift */; };
 		4C672A16208C680B00C68A05 /* SRCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C672A14208C680B00C68A05 /* SRCell.xib */; };
 		4C683438208C533A00DF08F1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C683437208C533A00DF08F1 /* SearchViewController.swift */; };
+		4C8A3A79208D9C7500EA46B8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A3A78208D9C7500EA46B8 /* MapViewController.swift */; };
+		4C8A3A7B208D9C9D00EA46B8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A3A7A208D9C9D00EA46B8 /* ProfileViewController.swift */; };
+		4C8A3A7E208DAA3800EA46B8 /* Profile+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A3A7C208DAA3700EA46B8 /* Profile+CoreDataClass.swift */; };
+		4C8A3A7F208DAA3800EA46B8 /* Profile+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8A3A7D208DAA3800EA46B8 /* Profile+CoreDataProperties.swift */; };
 		4CABBCEE2081EBBF009A414B /* StockDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CABBCED2081EBBF009A414B /* StockDetailViewController.swift */; };
 		4CABBCF02081ED30009A414B /* StockDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CABBCEF2081ED30009A414B /* StockDashboardViewController.swift */; };
 		4CCB3C8E2081A38A006638C2 /* InitialScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCB3C8D2081A38A006638C2 /* InitialScreen.swift */; };
@@ -49,6 +53,10 @@
 		4C672A13208C680B00C68A05 /* SRCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRCell.swift; sourceTree = "<group>"; };
 		4C672A14208C680B00C68A05 /* SRCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SRCell.xib; sourceTree = "<group>"; };
 		4C683437208C533A00DF08F1 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		4C8A3A78208D9C7500EA46B8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		4C8A3A7A208D9C9D00EA46B8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		4C8A3A7C208DAA3700EA46B8 /* Profile+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Profile+CoreDataClass.swift"; path = "/Users/michael/Code/StockRun/StockRun/Profile+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		4C8A3A7D208DAA3800EA46B8 /* Profile+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Profile+CoreDataProperties.swift"; path = "/Users/michael/Code/StockRun/StockRun/Profile+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
 		4CABBCED2081EBBF009A414B /* StockDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailViewController.swift; sourceTree = "<group>"; };
 		4CABBCEF2081ED30009A414B /* StockDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDashboardViewController.swift; sourceTree = "<group>"; };
 		4CCB3C8D2081A38A006638C2 /* InitialScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialScreen.swift; sourceTree = "<group>"; };
@@ -111,6 +119,8 @@
 		4C2394AD2075F114004AD4A2 /* StockRun */ = {
 			isa = PBXGroup;
 			children = (
+				4C8A3A7C208DAA3700EA46B8 /* Profile+CoreDataClass.swift */,
+				4C8A3A7D208DAA3800EA46B8 /* Profile+CoreDataProperties.swift */,
 				4C21A077208C77FE00A83E36 /* Stocks+CoreDataClass.swift */,
 				4C21A078208C77FE00A83E36 /* Stocks+CoreDataProperties.swift */,
 				4C2394AE2075F114004AD4A2 /* AppDelegate.swift */,
@@ -152,6 +162,8 @@
 				4CABBCED2081EBBF009A414B /* StockDetailViewController.swift */,
 				4CABBCEF2081ED30009A414B /* StockDashboardViewController.swift */,
 				4C683437208C533A00DF08F1 /* SearchViewController.swift */,
+				4C8A3A78208D9C7500EA46B8 /* MapViewController.swift */,
+				4C8A3A7A208D9C9D00EA46B8 /* ProfileViewController.swift */,
 				4C2394B22075F114004AD4A2 /* Main.storyboard */,
 			);
 			path = Dashboard;
@@ -347,10 +359,13 @@
 			files = (
 				4CABBCEE2081EBBF009A414B /* StockDetailViewController.swift in Sources */,
 				4C21A079208C77FE00A83E36 /* Stocks+CoreDataClass.swift in Sources */,
+				4C8A3A7F208DAA3800EA46B8 /* Profile+CoreDataProperties.swift in Sources */,
 				4CCB3C8E2081A38A006638C2 /* InitialScreen.swift in Sources */,
 				4C2394AF2075F114004AD4A2 /* AppDelegate.swift in Sources */,
 				4CABBCF02081ED30009A414B /* StockDashboardViewController.swift in Sources */,
 				4CCB3C9A2081AABA006638C2 /* SRButton.swift in Sources */,
+				4C8A3A7E208DAA3800EA46B8 /* Profile+CoreDataClass.swift in Sources */,
+				4C8A3A7B208D9C9D00EA46B8 /* ProfileViewController.swift in Sources */,
 				4C2394C42075F534004AD4A2 /* Stock.swift in Sources */,
 				4CCB3C962081A46C006638C2 /* Colors.swift in Sources */,
 				4C2394C72075F7A4004AD4A2 /* DataSource.swift in Sources */,
@@ -361,6 +376,7 @@
 				4CCB3C9C2081ADCA006638C2 /* Fonts.swift in Sources */,
 				4CCB3C942081A438006638C2 /* GradientView.swift in Sources */,
 				4C1DB430208C28B100055409 /* NASDAQ.swift in Sources */,
+				4C8A3A79208D9C7500EA46B8 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

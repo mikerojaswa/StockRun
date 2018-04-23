@@ -24,6 +24,17 @@ class StockDashboardViewController: UIViewController {
         tableView.reloadData()
     }
     
+    @IBAction func refreshButtonPressed(_ sender: Any) {
+        if let stocks = stocks {
+            DataSource.shared.updateUserStockPrices(completion: { result in
+                if let result = result {
+                    self.stocks = result
+                    self.tableView.reloadData()
+                }
+            })
+        }
+    }
+    
 }
 
 extension StockDashboardViewController: UITableViewDelegate, UITableViewDataSource {
