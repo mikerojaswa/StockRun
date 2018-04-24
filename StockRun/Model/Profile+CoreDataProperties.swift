@@ -2,7 +2,7 @@
 //  Profile+CoreDataProperties.swift
 //  
 //
-//  Created by Michael Rojas on 4/22/18.
+//  Created by Michael Rojas on 4/23/18.
 //
 //
 

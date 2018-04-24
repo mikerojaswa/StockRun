@@ -2,7 +2,7 @@
 //  Stocks+CoreDataProperties.swift
 //  
 //
-//  Created by Michael Rojas on 4/22/18.
+//  Created by Michael Rojas on 4/23/18.
 //
 //
 
@@ -17,7 +17,7 @@ extension Stocks {
     }
 
     @NSManaged public var companyName: String?
-    @NSManaged public var symbol: String?
     @NSManaged public var latestPrice: Double
+    @NSManaged public var symbol: String?
 
 }

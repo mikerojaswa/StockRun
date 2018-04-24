@@ -109,10 +109,20 @@
                                     <segue destination="Ape-QB-POh" kind="show" id="Dzq-Kl-1Xp"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Stocks" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RyB-JM-0ey">
+                                <rect key="frame" x="136" y="20" width="103" height="23.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="103" id="fSc-ma-K7d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="0.2666666667" green="0.81176470590000005" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="7Rg-Ck-UG5" firstAttribute="trailing" secondItem="gsG-2P-NXq" secondAttribute="trailing" constant="16" id="1iH-fb-LFZ"/>
+                            <constraint firstItem="RyB-JM-0ey" firstAttribute="top" secondItem="7Rg-Ck-UG5" secondAttribute="top" id="2EC-YK-sUe"/>
                             <constraint firstItem="SxX-O4-sSg" firstAttribute="leading" secondItem="7Rg-Ck-UG5" secondAttribute="leading" id="3x2-pp-dXy"/>
                             <constraint firstItem="7Rg-Ck-UG5" firstAttribute="top" secondItem="poK-Vv-g2F" secondAttribute="top" constant="2" id="NSZ-pO-Dwy"/>
                             <constraint firstItem="7Rg-Ck-UG5" firstAttribute="trailing" secondItem="SxX-O4-sSg" secondAttribute="trailing" id="OP9-uY-Hud"/>
@@ -120,6 +130,7 @@
                             <constraint firstItem="SxX-O4-sSg" firstAttribute="top" secondItem="7Rg-Ck-UG5" secondAttribute="top" constant="42" id="hWw-vf-F2o"/>
                             <constraint firstItem="7Rg-Ck-UG5" firstAttribute="bottom" secondItem="SxX-O4-sSg" secondAttribute="bottom" id="sOc-OR-dKb"/>
                             <constraint firstItem="7Rg-Ck-UG5" firstAttribute="top" secondItem="gsG-2P-NXq" secondAttribute="top" constant="3" id="sxz-Jb-Pga"/>
+                            <constraint firstItem="RyB-JM-0ey" firstAttribute="centerX" secondItem="7Rg-Ck-UG5" secondAttribute="centerX" id="xPz-D7-vJF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7Rg-Ck-UG5"/>
                     </view>
@@ -187,15 +198,15 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVU-F4-tJ2">
                                 <rect key="frame" x="67" y="341" width="50" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="0.2666666667" green="0.81176470590000005" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKF-do-5gc">
                                 <rect key="frame" x="125" y="341" width="182" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="0.2666666667" green="0.81176470590000005" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XeE-Or-Pu5">
@@ -250,27 +261,28 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91J-X3-vpc">
                                 <rect key="frame" x="16" y="90" width="343" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="0.2666666667" green="0.81176470590000005" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DyZ-3q-1wk">
                                 <rect key="frame" x="20" y="156" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="0.2666666667" green="0.81176470590000005" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JTZ-U6-MW1">
                                 <rect key="frame" x="102" y="156" width="257" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <color key="textColor" red="0.2666666667" green="0.81176470590000005" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxh-OH-8Av" customClass="SRButton" customModule="StockRun" customModuleProvider="target">
                                 <rect key="frame" x="127" y="495" width="120" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" title="Purchase"/>
                                 <connections>
                                     <action selector="purchaseButtonPressed:" destination="8jP-lf-Xmd" eventType="touchUpInside" id="frp-sB-fgz"/>
