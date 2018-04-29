@@ -24,10 +24,10 @@ class MapViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        doStuff()
+        setupMap()
     }
     
-    fileprivate func doStuff() {
+    fileprivate func setupMap() {
         var stockLocks: [stockLocs] = []
         if let stocks = stocks {
             let serviceGroup = DispatchGroup()

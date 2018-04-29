@@ -11,7 +11,6 @@ import UIKit
 
 class StockDetailViewController: UIViewController {
     var stock: Stock?
-    
     @IBOutlet var stockNameLabel: UILabel!
     @IBOutlet var currentPriceLabel: UILabel!
     
