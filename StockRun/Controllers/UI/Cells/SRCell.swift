@@ -9,6 +9,7 @@
 import UIKit
 
 class SRCell: UITableViewCell {
+
     @IBOutlet var cellLabel: UILabel!
     @IBOutlet var priceLabel: UILabel!
     override func awakeFromNib() {
