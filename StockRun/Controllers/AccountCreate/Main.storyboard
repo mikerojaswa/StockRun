@@ -76,7 +76,7 @@
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="fillButton" value="YES"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRad">
-                                                <real key="value" value="10"/>
+                                                <real key="value" value="20"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
@@ -110,10 +110,10 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="startColor">
-                                        <color key="value" red="0.26666666666666666" green="0.81176470588235294" blue="0.79607843137254897" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.1333333333" green="0.28235294119999998" blue="0.43921568630000002" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="endColor">
-                                        <color key="value" red="0.30588235294117649" green="0.6470588235294118" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="value" red="0.1333333333" green="0.28235294119999998" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -179,6 +179,23 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lkd-Tq-Z9J" customClass="SRButton" customModule="StockRun" customModuleProvider="target">
+                                <rect key="frame" x="230" y="577" width="120" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="56w-Uc-GLT"/>
+                                    <constraint firstAttribute="height" constant="50" id="Bso-5n-edg"/>
+                                </constraints>
+                                <state key="normal" title="Go"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="fillButton" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRad">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="g2e-IU-upR" kind="show" id="sQh-m9-p2v"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -186,17 +203,19 @@
                             <constraint firstItem="S4X-Lp-1mg" firstAttribute="leading" secondItem="2Dj-QI-HIB" secondAttribute="leading" id="65q-3U-qq9"/>
                             <constraint firstItem="m9C-Ky-vkP" firstAttribute="leading" secondItem="2Dj-QI-HIB" secondAttribute="leading" id="McQ-dH-HEg"/>
                             <constraint firstItem="2Dj-QI-HIB" firstAttribute="top" secondItem="S4X-Lp-1mg" secondAttribute="top" constant="20" id="Vij-2U-1F2"/>
+                            <constraint firstItem="2Dj-QI-HIB" firstAttribute="bottom" secondItem="lkd-Tq-Z9J" secondAttribute="bottom" constant="40" id="aOE-25-6Ta"/>
                             <constraint firstItem="2Dj-QI-HIB" firstAttribute="bottom" secondItem="m9C-Ky-vkP" secondAttribute="bottom" id="dHc-ku-NXc"/>
                             <constraint firstItem="2Dj-QI-HIB" firstAttribute="trailing" secondItem="S4X-Lp-1mg" secondAttribute="trailing" id="e3f-xL-5yy"/>
+                            <constraint firstItem="2Dj-QI-HIB" firstAttribute="trailing" secondItem="lkd-Tq-Z9J" secondAttribute="trailing" constant="25" id="jXi-4r-1fg"/>
                             <constraint firstItem="m9C-Ky-vkP" firstAttribute="top" secondItem="S4X-Lp-1mg" secondAttribute="bottom" id="nLi-ik-d3l"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2Dj-QI-HIB"/>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="startColor">
-                                <color key="value" red="0.2666666667" green="0.81176470590000005" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="value" red="0.1333333333" green="0.28235294119999998" blue="0.43921568630000002" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="color" keyPath="endColor">
-                                <color key="value" red="0.30588235289999999" green="0.64705882349999999" blue="0.85098039219999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="value" red="0.1333333333" green="0.28235294119999998" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
@@ -208,47 +227,13 @@
             </objects>
             <point key="canvasLocation" x="1213.5999999999999" y="-122.78860569715144"/>
         </scene>
-        <!--Page View Controller-->
-        <scene sceneID="vvy-96-voV">
+        <!--Onboarding-->
+        <scene sceneID="9bb-kT-zxx">
             <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="Erl-34-Woe" sceneMemberID="viewController">
-                    <connections>
-                        <segue destination="IoU-9i-rtv" kind="show" id="vgc-a5-TXM"/>
-                    </connections>
-                </pageViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="M9q-XP-3VC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Onboarding" id="g2e-IU-upR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gVN-8b-PmS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2006" y="-120"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="p8P-Zm-dng">
-            <objects>
-                <viewController id="k6e-ev-SbL" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="RHi-ZH-ib9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="hKj-Xt-35l"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="EiX-Bn-pAF" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2921" y="254"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="1QR-8H-A99">
-            <objects>
-                <viewController id="IoU-9i-rtv" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ow3-KS-3kw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <viewLayoutGuide key="safeArea" id="8T5-An-Ja0"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2RU-rf-OLX" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2932" y="-430"/>
+            <point key="canvasLocation" x="2116" y="-132"/>
         </scene>
     </scenes>
     <resources>

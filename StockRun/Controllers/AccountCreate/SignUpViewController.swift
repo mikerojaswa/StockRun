@@ -13,6 +13,8 @@ class SignUpViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     override func viewDidLoad() {
         setupStyles()
+        tableView.dataSource = self
+        tableView.delegate = self
     }
     
     fileprivate func setupStyles() {
@@ -25,11 +27,11 @@ class SignUpViewController: UIViewController {
 
 extension SignUpViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 3
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell.init()
+        let cell = Bundle.main.loadNibNamed("AccountNameCell", owner: self, options: nil)?.first as! AccountNameCell
         return cell
     }
     

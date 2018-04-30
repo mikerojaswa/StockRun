@@ -21,9 +21,9 @@ enum ButtonStyle {
         }
     }
     
-    @IBInspectable var cornerRad: CGFloat = 10 {
+    @IBInspectable var cornerRad: CGFloat = 20 {
         didSet {
-            self.layer.cornerRadius = 10
+            self.layer.cornerRadius = 20
         }
     }
     
