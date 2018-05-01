@@ -72,7 +72,6 @@ class DataSource {
                 }
             }
         }
-        
         return stocksData
     }
     
@@ -112,7 +111,6 @@ class DataSource {
         let imageData: NSData = UIImageJPEGRepresentation(image, 1)! as NSData
         prof.profileImage = imageData
         (UIApplication.shared.delegate as! AppDelegate).saveContext()
-        
     }
     
     fileprivate func deleteImages() {

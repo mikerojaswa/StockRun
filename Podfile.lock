@@ -19,9 +19,11 @@ PODS:
     - nanopb/encode (= 0.3.8)
   - nanopb/decode (0.3.8)
   - nanopb/encode (0.3.8)
+  - SwiftLint (0.24.2)
 
 DEPENDENCIES:
   - Firebase/Core
+  - SwiftLint
 
 SPEC CHECKSUMS:
   Firebase: 710decbbc6d9d48530e9a5dba3209740c3532e05
@@ -30,7 +32,8 @@ SPEC CHECKSUMS:
   FirebaseInstanceID: 81df5805a08001e69138664bdd02c6719a9ac80f
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  SwiftLint: 2aa21b96c8d13396a051bc1cb659d2ce1e0075b0
 
-PODFILE CHECKSUM: dac11c87e4f7338554bfef405644113a0d63d8ab
+PODFILE CHECKSUM: d81a15c1395ace19d77dfe556c2c964e365beefb
 
 COCOAPODS: 1.2.1

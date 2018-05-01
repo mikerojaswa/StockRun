@@ -10,8 +10,4 @@ import Foundation
 import UIKit
 
 class InitialScreen: UIViewController {
-    
-
-    
-    
 }

@@ -16,7 +16,6 @@ class SignUpViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
     }
-    
     fileprivate func setupStyles() {
         tableView.backgroundColor = .clear
     }

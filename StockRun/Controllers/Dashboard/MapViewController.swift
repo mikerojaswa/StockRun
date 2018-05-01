@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-struct stockLocs {
+struct StockLocs {
     let stock: Stock
     let coordinate: CLLocationCoordinate2D
 }
@@ -28,7 +28,7 @@ class MapViewController: UIViewController {
     }
     
     fileprivate func setupMap() {
-        var stockLocks: [stockLocs] = []
+        var stockLocks: [StockLocs] = []
         if let stocks = stocks {
             let serviceGroup = DispatchGroup()
             for item in stocks {
@@ -37,7 +37,7 @@ class MapViewController: UIViewController {
                     serviceGroup.leave()
                     if let placemarks = placemarks {
                         if let coordinate = (placemarks[0].location?.coordinate) {
-                            let stockboi = stockLocs.init(stock: item, coordinate: coordinate)
+                            let stockboi = StockLocs.init(stock: item, coordinate: coordinate)
                             stockLocks.append(stockboi)
                         }
                     }
@@ -49,7 +49,7 @@ class MapViewController: UIViewController {
         }
     }
     
-    fileprivate func addSomeAnnobois(stocks: [stockLocs]) {
+    fileprivate func addSomeAnnobois(stocks: [StockLocs]) {
         mapView.removeAnnotations(mapView.annotations)
         for item in stocks {
             let annotation = MKPointAnnotation()

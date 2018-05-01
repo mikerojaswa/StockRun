@@ -17,5 +17,11 @@ class SRAppBar: UIView {
         self.layer.shadowOpacity = 0.2
         self.layer.shadowOffset = CGSize.zero
         self.layer.shadowRadius = 5
+        
+        let array = [1]
+        
+        if array.count == 0 {
+            print("Yay")
+        }
     }
 }

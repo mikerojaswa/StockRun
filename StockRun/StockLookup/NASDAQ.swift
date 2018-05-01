@@ -6,7 +6,11 @@
 //  Copyright © 2018 Michael Rojas. All rights reserved.
 //
 // I apoligize to any soul that has ventured into the depths of this shithole - Michael
-struct NASDAQ {
+
+// swiftlint:disable type_body_length
+// swiftlint:disable file_length
+
+class NASDAQ {
 static let numericBucket: [String: String] = [
     "1347 Property Insurance Holdings, Inc.": "PIHPP",
     "180 Degree Capital Corp.": "TURN",

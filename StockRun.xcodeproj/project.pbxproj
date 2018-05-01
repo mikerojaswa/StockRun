@@ -24,6 +24,7 @@
 		4C2394C42075F534004AD4A2 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2394C32075F534004AD4A2 /* Stock.swift */; };
 		4C2394C72075F7A4004AD4A2 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2394C62075F7A4004AD4A2 /* DataSource.swift */; };
 		4C2394CD207B0CEF004AD4A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4C2394CC207B0CEF004AD4A2 /* GoogleService-Info.plist */; };
+		4C3364C32098A05F00C26E2E /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 4C3364C22098A05F00C26E2E /* .swiftlint.yml */; };
 		4C672A15208C680B00C68A05 /* SRCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C672A13208C680B00C68A05 /* SRCell.swift */; };
 		4C672A16208C680B00C68A05 /* SRCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C672A14208C680B00C68A05 /* SRCell.xib */; };
 		4C683438208C533A00DF08F1 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C683437208C533A00DF08F1 /* SearchViewController.swift */; };
@@ -64,6 +65,8 @@
 		4C2394C32075F534004AD4A2 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		4C2394C62075F7A4004AD4A2 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		4C2394CC207B0CEF004AD4A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4C3364C22098A05F00C26E2E /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		4C3364C52098A0E800C26E2E /* Rules.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Rules.md; sourceTree = "<group>"; };
 		4C672A13208C680B00C68A05 /* SRCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SRCell.swift; sourceTree = "<group>"; };
 		4C672A14208C680B00C68A05 /* SRCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SRCell.xib; sourceTree = "<group>"; };
 		4C683437208C533A00DF08F1 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -164,6 +167,8 @@
 		4C2394AD2075F114004AD4A2 /* StockRun */ = {
 			isa = PBXGroup;
 			children = (
+				4C3364C22098A05F00C26E2E /* .swiftlint.yml */,
+				4C3364C52098A0E800C26E2E /* Rules.md */,
 				4C2394AE2075F114004AD4A2 /* AppDelegate.swift */,
 				4C2394CC207B0CEF004AD4A2 /* GoogleService-Info.plist */,
 				4C8A3A80208ECCAA00EA46B8 /* Controllers */,
@@ -311,6 +316,7 @@
 				4C2394A92075F114004AD4A2 /* Resources */,
 				AF8D8BE5249FA1F0F255CA38 /* [CP] Embed Pods Frameworks */,
 				905B3560E2138F87CEC38920 /* [CP] Copy Pods Resources */,
+				4C3364C120989C5B00C26E2E /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -360,6 +366,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C3364C32098A05F00C26E2E /* .swiftlint.yml in Resources */,
 				4C2394BC2075F114004AD4A2 /* LaunchScreen.storyboard in Resources */,
 				4C2394CD207B0CEF004AD4A2 /* GoogleService-Info.plist in Resources */,
 				4C672A16208C680B00C68A05 /* SRCell.xib in Resources */,
@@ -388,6 +395,19 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
+		};
+		4C3364C120989C5B00C26E2E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
 		};
 		905B3560E2138F87CEC38920 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;

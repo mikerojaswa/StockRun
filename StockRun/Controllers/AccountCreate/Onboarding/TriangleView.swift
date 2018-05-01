@@ -10,18 +10,13 @@ import UIKit
 
 @IBDesignable
 class TriangleView : UIView {
-    var _color: UIColor! = UIColor.blue
-    var _margin: CGFloat! = 0
-    
-    @IBInspectable var margin: Double {
-        get { return Double(_margin)}
-        set { _margin = CGFloat(newValue)}
-    }
+    var color: UIColor! = UIColor.blue
+
     
     
     @IBInspectable var fillColor: UIColor? {
-        get { return _color }
-        set{ _color = newValue }
+        get { return color }
+        set{ color = newValue }
     }
     
     override init(frame: CGRect) {
@@ -36,23 +31,23 @@ class TriangleView : UIView {
         guard let context = UIGraphicsGetCurrentContext() else { return }
         
         context.beginPath()
-        context.move(to: CGPoint(x: rect.minX + _margin, y: rect.minY - _margin))
-        context.addLine(to: CGPoint(x: rect.maxX - _margin, y: rect.minY - _margin))
-        context.addLine(to: CGPoint(x: rect.maxX, y: rect.maxY + _margin))
-        context.addLine(to: CGPoint(x: rect.minX, y: rect.maxY + _margin))
+        context.move(to: CGPoint(x: rect.minX, y: rect.minY ))
+        context.addLine(to: CGPoint(x: rect.maxX, y: rect.minY ))
+        context.addLine(to: CGPoint(x: rect.maxX, y: rect.maxY ))
+        context.addLine(to: CGPoint(x: rect.minX, y: rect.maxY ))
         context.closePath()
         
         context.setFillColor(UIColor.clear.cgColor)
         context.fillPath()
 
         context.beginPath()
-        context.move(to: CGPoint(x: rect.minX + _margin, y: rect.minY - _margin))
-        context.addLine(to: CGPoint(x: rect.maxX - _margin, y: (rect.maxY)/5 - _margin))
-        context.addLine(to: CGPoint(x: rect.maxX - _margin, y: rect.maxY - _margin))
-        context.addLine(to: CGPoint(x: rect.minX - _margin, y: rect.maxY - _margin))
+        context.move(to: CGPoint(x: rect.minX, y: rect.minY ))
+        context.addLine(to: CGPoint(x: rect.maxX, y: (rect.maxY)/5 ))
+        context.addLine(to: CGPoint(x: rect.maxX, y: rect.maxY ))
+        context.addLine(to: CGPoint(x: rect.minX, y: rect.maxY ))
         context.closePath()
         
-        context.setFillColor(_color.cgColor)
+        context.setFillColor(color.cgColor)
         context.fillPath()
     }
 }

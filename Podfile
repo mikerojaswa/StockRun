@@ -7,5 +7,5 @@ target 'StockRun' do
 
   # Pods for StockRun
   pod 'Firebase/Core'
-
+  pod 'SwiftLint'
 end
